@@ -5,6 +5,7 @@ import platform
 def install_clickhouse():
     os_name = platform.system().lower()
     if os_name == 'linux':
+        os.system('brew install clickhouse-server clickhouse-client')
         os.system('sudo apt-get install -y clickhouse-server clickhouse-client')
         os.system('sudo service clickhouse-server start')
     elif os_name == 'darwin':
