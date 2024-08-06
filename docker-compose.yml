@@ -9,8 +9,8 @@ services:
       - "9000:9000"
       - "9009:9009"
     volumes:
-      - ./clickhouse/config/users.xml:/etc/clickhouse-server/users.xml
-      - ./clickhouse/config/create_database.sql:/docker-entrypoint-initdb.d/create_database.sql
+      - ./clickhouse/config/users.xml:/etc/clickhouse-server/users.xml:ro
+      - ./clickhouse/config/create_database.sql:/docker-entrypoint-initdb.d/create_database.sql:ro
     environment:
       - CLICKHOUSE_DB=makro_pro
       - CLICKHOUSE_USER=admin
