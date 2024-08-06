@@ -5,9 +5,9 @@ import pandas as pd
 # ClickHouse connection details
 clickhouse_host = 'localhost'
 clickhouse_port = 9000
-clickhouse_user = 'default'
-clickhouse_password = ''
-clickhouse_database = 'forex'
+clickhouse_user = 'admin'
+clickhouse_password = 'admin'
+clickhouse_database = 'makro_pro'
 
 # File to load
 input_file = '../data/sample_data.csv'
